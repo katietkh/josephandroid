@@ -1,5 +1,7 @@
-josephandroid
-=============
+The Joseph Android Project
+-----
+#####What is this all about? 
+Android learning good times yay!
 
-Android learning good times yay
-Best fort meeting ever! 
+####Java 
+
