@@ -31,3 +31,4 @@ else if (name.equals("Clark Kent")) {
 In Java, applying the double-equals to String objects does not compare the actual values of the objects, just whether or not the references are equal, which usually isn’t what we’re looking to compare. Use the `String.equals(String other)` function to compare strings, not the `==` operator.
 
 *  More to come!
+This is the branch edit!
