@@ -5,6 +5,8 @@ Android learning good times yay!
 
 ####Java Quirks
 
+Treehouse Android Cheat Sheet http://treehouse-cheatsheets.s3.amazonaws.com/android_island1_cheat_sheet.html
+
 * Calling a method 
 
 ```
