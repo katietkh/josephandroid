@@ -1,17 +1,61 @@
 package com.example.wwjd;
 
-import android.os.Bundle;
+import java.util.Random;
+
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+//Source -> Organize imports
 
 public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+    	//OnCreate gets called when the activity is first created.
+    	//Inside the parenthesis is the parameter of the method ie: call activity_main
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        // Declare our View variables and assign them the Views from the xml layout file
+        final TextView answerLabel = (TextView) findViewById(R.id.buttontext);
+        /*
+         * 'final' means our answerlabel variable cannot be reassigned.
+         * A cast allows us to say that one data type, in this case the view returned by 
+         * our method, can safely be cast as another data type, a text view in this example.  
+         * We know that the view return will, in face, be a text view. So, we add the cast to 
+         * text view in parentheses in front of the method call. 
+		 *  TextView answerLabel = findViewById(R.id.buttontext) becomes
+         *  TextView answerLabel = (TextView) findViewById(R.id.buttontext);
+         */
+        Button getAnswerButton = (Button) findViewById(R.id.button1);
+        
+        //Have the button an answer
+        getAnswerButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				String [] answers = {
+					"answer 1",
+					"answer 2",
+					"answer 3",
+					"answer 4",
+					"answer 5" };
+					
+				// The button was clicked, so update the answer label with an answer
+				String answer = "";
+				
+				///Randomly select one of the answers
+				Random randomGenerator = new Random(); // Construct a new Random number generator
+				int randomNumber = randomGenerator.nextInt(answers.length);
+				
+				answer = answers[randomNumber]; // hey answers array, give me the element at index randomNumber
+			}
+		});
+        
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

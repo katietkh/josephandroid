@@ -9,7 +9,7 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/buttontext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -17,11 +17,17 @@
         android:text=""
         android:textSize="32sp" />
 
+    <!--  
+    	Since it's a relative layout, the button is placed relative to the textview. 
+   	    It's linked through the ID.  See android:layout_below=@+id/buttontext 
+    -->
+
+    
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_below="@+id/buttontext"
         android:layout_centerHorizontal="true"
         android:text="What would Joseph do?" />
 
