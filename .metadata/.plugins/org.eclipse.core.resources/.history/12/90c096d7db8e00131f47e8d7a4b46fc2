@@ -23,7 +23,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				String answer = mWWJD.getAnAnswer();
-			
+				
 				answerLabel.setText(answer);
 			}
 		});

@@ -1,0 +1,27 @@
+package com.example.wwjd;
+
+import java.util.Random;
+
+public class WWJD {
+	// Member variables (properties about the object)
+	
+	//Methods
+	public String getAnAnswer() {
+		
+		String [] answers = {
+				"answer 1",
+				"answer 2",
+				"answer 3",
+				"answer 4",
+				"answer 5" };
+				
+			String answer = "";
+			
+			Random randomGenerator = new Random(); // Construct a new Random number generator
+			int randomNumber = randomGenerator.nextInt(answers.length);
+			
+			answer = answers[randomNumber];
+			
+			return answer;
+	}
+}
