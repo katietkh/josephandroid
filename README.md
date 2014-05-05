@@ -9,3 +9,4 @@ Android learning good times yay!
 - Add more appropriate Joseph-like phrasing
 - Change image icon
 - Change package name
+- Figure out wtf .metadata and .ds_store are doing
